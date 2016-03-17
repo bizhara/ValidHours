@@ -26,11 +26,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="incrementHour1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2d0-kP-2MR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thb-mN-UzV">
                                                 <rect key="frame" x="25" y="0.0" width="24" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                <state key="normal" title="9"/>
+                                                <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="incrementHour2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTx-RI-zP1"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wME-xB-YTI">
                                                 <rect key="frame" x="50" y="8" width="22" height="21"/>
@@ -48,11 +54,17 @@
                                                 <rect key="frame" x="110" y="0.0" width="24" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="incrementHour1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2w-b6-SLY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVr-CY-8Rg">
                                                 <rect key="frame" x="135" y="0.0" width="24" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                <state key="normal" title="9"/>
+                                                <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="incrementHour2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBK-YQ-S29"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyf-8a-ruv">
                                                 <rect key="frame" x="160" y="8" width="22" height="21"/>
@@ -80,11 +92,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="incrementHour1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXY-hl-ve3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcq-73-XRo">
                                                 <rect key="frame" x="25" y="0.0" width="24" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                <state key="normal" title="9"/>
+                                                <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="incrementHour2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s51-6Z-rmr"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時は" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz7-0T-36P">
                                                 <rect key="frame" x="50" y="8" width="40" height="21"/>

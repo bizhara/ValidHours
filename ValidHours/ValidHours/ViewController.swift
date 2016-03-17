@@ -19,6 +19,26 @@ class ViewController: UIViewController {
             frameThickness: 1, frameColor: UIColor.lightGrayColor(), frameCorner: 6)
     }
     
+    @IBAction func incrementHour1(sender: UIButton) {
+        var hour: Int = Int(sender.titleLabel!.text!)!
+        if ((hour >= 0) && (hour <= 1)) {
+            hour = hour + 1
+        } else {
+            hour = 0
+        }
+        sender.setTitle(String(hour), forState: .Normal)
+    }
+    
+    @IBAction func incrementHour2(sender: UIButton) {
+        var hour: Int = Int(sender.titleLabel!.text!)!
+        if ((hour >= 0) && (hour <= 8)) {
+            hour = hour + 1
+        } else {
+            hour = 0
+        }
+        sender.setTitle(String(hour), forState: .Normal)
+    }
+    
     @IBOutlet private weak var controllersFrame: UIView!
     @IBOutlet private weak var startHour1: UIButton!
     @IBOutlet private weak var startHour2: UIButton!
