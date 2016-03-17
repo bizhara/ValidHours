@@ -43,11 +43,8 @@ class ViewController: UIViewController {
         let startHour = (Int(self.startHour1.titleLabel!.text!)! * 10) + Int(self.startHour2.titleLabel!.text!)!
         let endHour = (Int(self.endHour1.titleLabel!.text!)! * 10) + Int(self.endHour2.titleLabel!.text!)!
         let targetHour = (Int(self.targetHour1.titleLabel!.text!)! * 10) + Int(self.targetHour2.titleLabel!.text!)!
-        if (self.isValidHour(startHour: startHour, endHour: endHour, targetHour: targetHour)) {
-            print("OK")
-        } else {
-            print("NG")
-        }
+        
+        self.resultPanel.text = (self.isValidHour(startHour: startHour, endHour: endHour, targetHour: targetHour)) ? "OK" : "NG"
     }
     
     private func isValidHour(startHour startHour_: Int, endHour endHour_: Int, targetHour targetHour_: Int) -> Bool {
@@ -62,5 +59,6 @@ class ViewController: UIViewController {
     @IBOutlet private weak var targetHour1: UIButton!
     @IBOutlet private weak var targetHour2: UIButton!
     @IBOutlet private weak var checkHours: UIButton!
+    @IBOutlet private weak var resultPanel: UILabel!
 }
 

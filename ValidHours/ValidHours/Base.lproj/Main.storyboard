@@ -16,6 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4B-y6-TWs">
+                                <rect key="frame" x="225" y="265" width="150" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Htz-92-cRo"/>
+                                    <constraint firstAttribute="height" constant="70" id="Idd-uj-c7B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRy-3G-Nm3">
                                 <rect key="frame" x="0.0" y="480" width="600" height="120"/>
                                 <subviews>
@@ -140,6 +150,8 @@
                         <constraints>
                             <constraint firstItem="aRy-3G-Nm3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I1d-bz-QJj"/>
                             <constraint firstAttribute="trailing" secondItem="aRy-3G-Nm3" secondAttribute="trailing" id="LEe-Nx-WoN"/>
+                            <constraint firstItem="f4B-y6-TWs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NaU-iA-sNt"/>
+                            <constraint firstItem="f4B-y6-TWs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fJG-Hu-Ly9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aRy-3G-Nm3" secondAttribute="bottom" id="qO0-ax-zHn"/>
                         </constraints>
                     </view>
@@ -149,6 +161,7 @@
                         <outlet property="controllersFrame" destination="aRy-3G-Nm3" id="GEy-O2-DWR"/>
                         <outlet property="endHour1" destination="lqe-Vi-Aw4" id="J35-Bb-Lh7"/>
                         <outlet property="endHour2" destination="tVr-CY-8Rg" id="7ZQ-TE-kJZ"/>
+                        <outlet property="resultPanel" destination="f4B-y6-TWs" id="7x4-NR-6Ug"/>
                         <outlet property="startHour1" destination="1t8-pY-7p1" id="pJe-0Q-732"/>
                         <outlet property="startHour2" destination="thb-mN-UzV" id="uaU-zY-2As"/>
                         <outlet property="targetHour1" destination="wbs-K9-yB1" id="Zpr-bA-EBU"/>
