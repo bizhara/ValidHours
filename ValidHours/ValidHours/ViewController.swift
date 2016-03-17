@@ -21,21 +21,13 @@ class ViewController: UIViewController {
     
     @IBAction func incrementHour1(sender: UIButton) {
         var hour: Int = Int(sender.titleLabel!.text!)!
-        if ((hour >= 0) && (hour <= 1)) {
-            hour = hour + 1
-        } else {
-            hour = 0
-        }
+        hour = HourChecker.validHour1(hour: hour)
         sender.setTitle(String(hour), forState: .Normal)
     }
     
     @IBAction func incrementHour2(sender: UIButton) {
         var hour: Int = Int(sender.titleLabel!.text!)!
-        if ((hour >= 0) && (hour <= 8)) {
-            hour = hour + 1
-        } else {
-            hour = 0
-        }
+        hour = HourChecker.validHour2(hour: hour)
         sender.setTitle(String(hour), forState: .Normal)
     }
     
@@ -44,17 +36,7 @@ class ViewController: UIViewController {
         let endHour = (Int(self.endHour1.titleLabel!.text!)! * 10) + Int(self.endHour2.titleLabel!.text!)!
         let targetHour = (Int(self.targetHour1.titleLabel!.text!)! * 10) + Int(self.targetHour2.titleLabel!.text!)!
         
-        self.resultPanel.text = (self.isValidHour(startHour: startHour, endHour: endHour, targetHour: targetHour)) ? "OK" : "NG"
-    }
-    
-    private func isValidHour(startHour startHour_: Int, endHour endHour_: Int, targetHour targetHour_: Int) -> Bool {
-        if (endHour_ > startHour_) {
-            return (targetHour_ >= startHour_) && (targetHour_ < endHour_)
-        } else if (endHour_ < startHour_) {
-            return (targetHour_ >= startHour_) || (targetHour_ < endHour_)
-        } else {
-            return false
-        }
+        self.resultPanel.text = (HourChecker.isValidHours(startHour: startHour, endHour: endHour, targetHour: targetHour)) ? "OK" : "NG"
     }
     
     @IBOutlet private weak var controllersFrame: UIView!
