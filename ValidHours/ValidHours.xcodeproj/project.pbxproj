@@ -13,6 +13,7 @@
 		4333C8B61C9A51760074FE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4333C8B51C9A51760074FE25 /* Assets.xcassets */; };
 		4333C8B91C9A51760074FE25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4333C8B71C9A51760074FE25 /* LaunchScreen.storyboard */; };
 		4333C8C41C9A51760074FE25 /* ValidHoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333C8C31C9A51760074FE25 /* ValidHoursTests.swift */; };
+		43CDFCC91C9B326400BF5F1A /* UIView.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFCC81C9B326400BF5F1A /* UIView.extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4333C8BF1C9A51760074FE25 /* ValidHoursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidHoursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4333C8C31C9A51760074FE25 /* ValidHoursTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidHoursTests.swift; sourceTree = "<group>"; };
 		4333C8C51C9A51760074FE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43CDFCC81C9B326400BF5F1A /* UIView.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				4333C8AE1C9A51760074FE25 /* AppDelegate.swift */,
 				4333C8B01C9A51760074FE25 /* ViewController.swift */,
+				43CDFCC81C9B326400BF5F1A /* UIView.extension.swift */,
 				4333C8B21C9A51760074FE25 /* Main.storyboard */,
 				4333C8B51C9A51760074FE25 /* Assets.xcassets */,
 				4333C8B71C9A51760074FE25 /* LaunchScreen.storyboard */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CDFCC91C9B326400BF5F1A /* UIView.extension.swift in Sources */,
 				4333C8B11C9A51760074FE25 /* ViewController.swift in Sources */,
 				4333C8AF1C9A51760074FE25 /* AppDelegate.swift in Sources */,
 			);
@@ -386,6 +390,7 @@
 				4333C8CA1C9A51760074FE25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4333C8CB1C9A51760074FE25 /* Build configuration list for PBXNativeTarget "ValidHoursTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +399,7 @@
 				4333C8CD1C9A51760074FE25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
