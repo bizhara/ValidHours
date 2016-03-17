@@ -113,6 +113,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n0-wb-12c">
                                                 <rect key="frame" x="91" y="3" width="110" height="30"/>
                                                 <state key="normal" title="含まれるか？"/>
+                                                <connections>
+                                                    <action selector="checkHours:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naV-9H-9i4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

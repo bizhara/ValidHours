@@ -39,6 +39,21 @@ class ViewController: UIViewController {
         sender.setTitle(String(hour), forState: .Normal)
     }
     
+    @IBAction func checkHours(sender: UIButton) {
+        let startHour = (Int(self.startHour1.titleLabel!.text!)! * 10) + Int(self.startHour2.titleLabel!.text!)!
+        let endHour = (Int(self.endHour1.titleLabel!.text!)! * 10) + Int(self.endHour2.titleLabel!.text!)!
+        let targetHour = (Int(self.targetHour1.titleLabel!.text!)! * 10) + Int(self.targetHour2.titleLabel!.text!)!
+        if (self.isValidHour(startHour: startHour, endHour: endHour, targetHour: targetHour)) {
+            print("OK")
+        } else {
+            print("NG")
+        }
+    }
+    
+    private func isValidHour(startHour startHour_: Int, endHour endHour_: Int, targetHour targetHour_: Int) -> Bool {
+        return (startHour_ != endHour_) && ((targetHour_ >= startHour_) || (targetHour_ < endHour_))
+    }
+    
     @IBOutlet private weak var controllersFrame: UIView!
     @IBOutlet private weak var startHour1: UIButton!
     @IBOutlet private weak var startHour2: UIButton!
