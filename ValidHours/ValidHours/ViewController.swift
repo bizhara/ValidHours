@@ -48,7 +48,13 @@ class ViewController: UIViewController {
     }
     
     private func isValidHour(startHour startHour_: Int, endHour endHour_: Int, targetHour targetHour_: Int) -> Bool {
-        return (startHour_ != endHour_) && ((targetHour_ >= startHour_) || (targetHour_ < endHour_))
+        if (endHour_ > startHour_) {
+            return (targetHour_ >= startHour_) && (targetHour_ < endHour_)
+        } else if (endHour_ < startHour_) {
+            return (targetHour_ >= startHour_) || (targetHour_ < endHour_)
+        } else {
+            return false
+        }
     }
     
     @IBOutlet private weak var controllersFrame: UIView!
