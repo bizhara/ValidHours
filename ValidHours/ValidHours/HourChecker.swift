@@ -7,11 +7,11 @@
 //
 
 class HourChecker {
-    class func validHour1(hour hour_: Int) -> Int {
+    class func nextHour1(hour hour_: Int) -> Int {
         return ((hour_ >= 0) && (hour_ <= 1)) ? hour_ + 1 : 0
     }
     
-    class func validHour2(hour hour_: Int) -> Int {
+    class func nextHour2(hour hour_: Int) -> Int {
         return ((hour_ >= 0) && (hour_ <= 8)) ? hour_ + 1 : 0
     }
     

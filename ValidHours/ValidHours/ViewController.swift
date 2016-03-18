@@ -21,13 +21,13 @@ class ViewController: UIViewController {
     
     @IBAction func incrementHour1(sender: UIButton) {
         var hour: Int = Int(sender.titleLabel!.text!)!
-        hour = HourChecker.validHour1(hour: hour)
+        hour = HourChecker.nextHour1(hour: hour)
         sender.setTitle(String(hour), forState: .Normal)
     }
     
     @IBAction func incrementHour2(sender: UIButton) {
         var hour: Int = Int(sender.titleLabel!.text!)!
-        hour = HourChecker.validHour2(hour: hour)
+        hour = HourChecker.nextHour2(hour: hour)
         sender.setTitle(String(hour), forState: .Normal)
     }
     
