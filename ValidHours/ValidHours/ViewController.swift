@@ -32,9 +32,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func checkHours(sender: UIButton) {
-        let startHour = (Int(self.startHour1.titleLabel!.text!)! * 10) + Int(self.startHour2.titleLabel!.text!)!
-        let endHour = (Int(self.endHour1.titleLabel!.text!)! * 10) + Int(self.endHour2.titleLabel!.text!)!
-        let targetHour = (Int(self.targetHour1.titleLabel!.text!)! * 10) + Int(self.targetHour2.titleLabel!.text!)!
+        func hourValueFrom(hour1 hour1_: UIButton, hour2 hour2_: UIButton) -> Int {
+            return (Int(hour1_.titleLabel!.text!)! * 10) + Int(hour2_.titleLabel!.text!)!
+        }
+        
+        let startHour = hourValueFrom(hour1: self.startHour1, hour2: self.startHour2)
+        let endHour = hourValueFrom(hour1: self.endHour1, hour2: self.endHour2)
+        let targetHour = hourValueFrom(hour1: self.targetHour1, hour2: self.targetHour2)
         
         self.resultPanel.text = (HourChecker.isValidHours(startHour: startHour, endHour: endHour, targetHour: targetHour)) ? "OK" : "NG"
     }
